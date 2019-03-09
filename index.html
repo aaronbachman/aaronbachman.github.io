@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,29 +37,16 @@
             height: 100px;
             border-radius: 50%;
         }
+
+        .center-iframe {
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 </head>
 
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                Menu <i class="fa fa-bars"></i>
-            </button>
-        </div>
-
-    </div>
-    <!-- /.container -->
-</nav>
-
-<!-- Page Header -->
-<!-- Set your background image for this header on the line below. -->
 <header class="intro-header" style="background-image: url('img/background.png')">
     <div class="container">
         <div class="row">
@@ -75,87 +61,88 @@
     </div>
 </header>
 
-<!-- Main Content -->
 <div class="container">
-    <div class="row">
-        <h1 class="text-center">Introduction</h1>
-        <img src="img/avatar.png" alt="Avatar" class="avatar" style="margin:20px; float: left">
-        <p class="text-center">Born in Central Minnesota and grew up about five miles outside of the small town of Paynesville.  Received a Bachelors degree in Information Systems (major in computer science, minor in business) from Minnesota State University, Mankato and started working in .NET at Brown Printing as an intern for two years while attending classes.  I then started my professional career upon graduation within a week at <a href="https://www.oati.com/" target="_blank">OATI</a>  as a full time developer and product owner working primarily in a proprietary scripting language (webPlus) which is similar to PHP.</p>
-        <p class="text-center">Currently employed at <a href="https://www.tnsinc.com/" target="_blank">TravelNet Solutions</a> since 2013 as an engineer on the technology team working in the Hospitality Industry.  I am highly skilled in PHP, Zend Framework, Angular, Javascript, and MySQL, AWS Products, Wordpress, and building API Integrations.  I've been working remotely (traveling full-time) since 2017 and love my job, check out the map below to see all the places I've been fortunate enough to visited.  Also, in 2015 I took a five month sabbatical leave to hike over 1,000 miles on the Pacific Crest Trail, which was an amazing adventure.</p>
-
+    <div style="text-align: center">
+        <img src="img/avatar.png" alt="Avatar" class="avatar">
     </div>
     <div class="row">
+        <h1 class="text-center">Introduction</h1>
+        <p style="padding:0 10px 0 10px;">Born in Central Minnesota and grew up about five miles outside of the small
+            town of Paynesville. Received a Bachelors degree in Information Systems (major in computer science, minor in
+            business) from Minnesota State University, Mankato and started working in .NET at Brown Printing as an
+            intern for two years while attending classes. I then started my professional career upon graduation within a
+            week at <a href="https://www.oati.com/" target="_blank">OATI</a> as a full time developer and product owner
+            working primarily in a proprietary scripting language (webPlus) which is similar to PHP.</p>
+        <p style="padding:0 10px 0 10px;">Currently employed at <a href="https://www.tnsinc.com/" target="_blank">TravelNet
+            Solutions</a> since 2013 as an engineer on the technology team working in the Hospitality Industry. I am
+            highly skilled in PHP, Zend Framework, Angular, Javascript, and MySQL, AWS Products, Wordpress, and building
+            API Integrations. I've been working remotely (traveling full-time) since 2017 and love my job, check out the
+            map below to see all the places I've been fortunate enough to visited. Also, in 2015 I took a five month
+            sabbatical leave to hike over 1,000 miles on the Pacific Crest Trail, which was an amazing adventure.</p>
+    </div>
+    <div class="row hidden-xs">
         <h1 class="text-center">Github Metrics</h1>
         <p class="text-center">As you can see I'm pretty active on GitHub.</p>
 
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <script
-                    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
-            ></script>
-
-            <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-            <link
-                    rel="stylesheet"
-                    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-            />
-
-
+            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+            <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
             <!-- Prepare a container for your calendar. -->
             <div class="calendar" style="border:none!important;">
-                <!-- Loading stuff -->
                 <i class="fa fa-spinner fa-spin fa-5x"></i>
-
-
             </div>
-
             <script>
                 GitHubCalendar(".calendar", "aaronbachman");
                 // or enable responsive functionality
                 GitHubCalendar(".calendar", "aaronbachman", {responsive: true});
             </script>
-
         </div>
     </div>
 
-    <div class="row" style="margin-top:30px;">
+    <div class="row">
         <h1 class="text-center">Real-time Health</h1>
-        <p class="text-center">This is cool, I've connected RescueTime, Apple Health, FitBit and synced it all to Gyroscope, which provides awesome visualizations for Productivity, Sleep, Heart Rate, Fitness, Travel, and overall Health. </p>
-        <p class="text-center">Checkout my real-time helix graph by <a href="https://gyrosco.pe/aaronbachman/helix/mind/" target="_blank" style="cursor: pointer;">clicking here</a></p>
+        <p style="padding:10px;">This is cool, I've connected RescueTime, Apple Health, FitBit and synced it all to
+            Gyroscope, which provides awesome visualizations for Productivity, Sleep, Heart Rate, Fitness, Travel, and
+            overall Health. </p>
+        <p class="text-center" style="padding:10px;">Checkout my real-time helix graph by
+            <a href="https://gyrosco.pe/aaronbachman/helix/mind/" target="_blank" style="cursor: pointer;">clicking
+                here</a>
+        </p>
         <a href="https://gyrosco.pe/aaronbachman/helix/mind/" target="_blank" style="cursor: pointer;">
-
             <img height="200px" src="img/Helix.png" class="center-block">
         </a>
     </div>
 
-
-    <div class="row" style="margin-top:30px;">
+    <div class="row">
         <h1 class="text-center">Traveling</h1>
         <p class="text-center">Here is a map of places I've traveled.</p>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1DHYxtF9N8RwcKs5NsydSWy8zBLLGAEmJ" width="100%" height="600px;"></iframe>
+        <iframe style="padding:0 20px 0 20px; border: none"
+                src="https://www.google.com/maps/d/embed?mid=1DHYxtF9N8RwcKs5NsydSWy8zBLLGAEmJ" width="100%"
+                height="600px;"></iframe>
     </div>
 
-
-
-
-    <div class="row" style="margin-top:30px;">
+    <div class="row">
         <h1 class="text-center">Highlight Video</h1>
         <p class="text-center">Collect memories, not things</p>
+        <iframe class="center-iframe"
+                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Faaron.bachman%2Fvideos%2F10102375200915760%2F&show_text=0&width=560"
+                width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowTransparency="true" allowFullScreen="true"></iframe>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/fB1UYnSR1SA?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Faaron.bachman%2Fvideos%2F10102375200915760%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
     </div>
-    <div class="row" style="margin-top:30px;">
+    <div class="row">
         <h1 class="text-center">Photos</h1>
-        <p class="text-center">My Instagram feed, however I usually update my story so follow me at <a href="https://www.instagram.com/aaron.bachman/" target="_blank">@aaron.bachman</a> to see more.</p>
+        <p class="text-center" style="margin:30px;">My Instagram feed, however I usually update my story so follow me at
+            <a href="https://www.instagram.com/aaron.bachman/" target="_blank">@aaron.bachman</a> to see more.</p>
 
-        <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="http://lightwidget.com/widgets/ab7d951285245d458c031514242a87f5.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+        <!-- LightWidget WIDGET -->
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+        <iframe src="http://lightwidget.com/widgets/ab7d951285245d458c031514242a87f5.html" scrolling="no"
+                allowtransparency="true" class="lightwidget-widget"
+                style="width:100%;border:0;overflow:hidden;"></iframe>
     </div>
-
 </div>
-
 <hr>
-
 <!-- Footer -->
 <footer>
     <div class="container">
@@ -222,20 +209,21 @@
 <!-- Theme JavaScript -->
 <script src="js/clean-blog.min.js"></script>
 
-
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15498684-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
 
     gtag('config', 'UA-15498684-1');
 </script>
 
-
 </body>
-
 
 
 </html>
